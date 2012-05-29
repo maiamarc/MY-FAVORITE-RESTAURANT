@@ -22,14 +22,14 @@
 		50C538231575192E00223A1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		50C538251575192E00223A1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		50C538271575192E00223A1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		50C5382B1575192E00223A1C /* MY-FAVORITE-RESTAURANT-Info.plist */ = {isa = PBXFileReference; path = "MY-FAVORITE-RESTAURANT-Info.plist"; sourceTree = "<group>"; };
+		50C5382B1575192E00223A1C /* MY-FAVORITE-RESTAURANT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MY-FAVORITE-RESTAURANT-Info.plist"; sourceTree = "<group>"; };
 		50C5382D1575192E00223A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50C5382F1575192E00223A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		50C538311575192E00223A1C /* MY-FAVORITE-RESTAURANT-Prefix.pch */ = {isa = PBXFileReference; path = "MY-FAVORITE-RESTAURANT-Prefix.pch"; sourceTree = "<group>"; };
-		50C538321575192E00223A1C /* MMMFRAppDelegate.h */ = {isa = PBXFileReference; path = MMMFRAppDelegate.h; sourceTree = "<group>"; };
+		50C538311575192E00223A1C /* MY-FAVORITE-RESTAURANT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MY-FAVORITE-RESTAURANT-Prefix.pch"; sourceTree = "<group>"; };
+		50C538321575192E00223A1C /* MMMFRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMFRAppDelegate.h; sourceTree = "<group>"; };
 		50C538331575192E00223A1C /* MMMFRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMFRAppDelegate.m; sourceTree = "<group>"; };
 		50C538361575192E00223A1C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		50C538381575192E00223A1C /* MMMFRViewController.h */ = {isa = PBXFileReference; path = MMMFRViewController.h; sourceTree = "<group>"; };
+		50C538381575192E00223A1C /* MMMFRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMFRViewController.h; sourceTree = "<group>"; };
 		50C538391575192E00223A1C /* MMMFRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMFRViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
