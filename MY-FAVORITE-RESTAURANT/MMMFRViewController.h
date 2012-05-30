@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMMFRViewController : UIViewController
+@interface MMMFRViewController : UIViewController 
+
+@property (weak, nonatomic) IBOutlet UITextField *BookingName;
 
 @end

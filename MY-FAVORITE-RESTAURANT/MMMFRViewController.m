@@ -13,6 +13,7 @@
 @end
 
 @implementation MMMFRViewController
+@synthesize BookingName;
 
 - (void)viewDidLoad
 {
@@ -22,6 +23,7 @@
 
 - (void)viewDidUnload
 {
+    [self setBookingName:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +33,39 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)SendReservation:(id)sender {
+    NSLog(@"Quiero Hacer una reserva a nombre de : %@", BookingName.text);
+    
+    // Get device unique ID
+    UIDevice *device = [UIDevice currentDevice];
+    NSString *uniqueIdentifier = [device uniqueIdentifier];
+
+    // Start request
+    NSString *code = textField.text;
+    NSURL *url = [NSURL URLWithString:@"http://www.zeniting.net/marc/ios/promo/"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request setPostValue:@"1" forKey:@"rw_app_id"];
+    [request setPostValue:code forKey:@"code"];
+    [request setPostValue:uniqueIdentifier forKey:@"device_id"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    
+    // Hide keyword
+    [textField resignFirstResponder];
+    
+    // Clear text field
+    textView.text = @"";
+    
+    // Start hud
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Redeeming code...";
+    
+    return TRUE;
+
+}
 @end
+
+
+
+
+
